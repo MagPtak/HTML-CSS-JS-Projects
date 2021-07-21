@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garmin Connect</title>
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <ul>
             <li><a href="https://connect.garmin.com"><img src="logo.png" height="28" width="150"></a></li>
             <li><a href="https://connect.garmin.com/start/">Get started</a></li>
@@ -22,16 +22,40 @@
             </section>
             <button class="btn" href="https://connect.garmin.com/signin">Sign in</button>
          </ul>
-    </div>
+    </header>
 
-    <div class="main">
-        <img src="main.jpg" height="535" width="800">
-        <div class="box"></div>
-    </div>
+    <main class="main">
+        <form action="signin" method="post">
+            <label>Email</label>
+            <br>
+            <input type="text" name="Email" />
+            <br>
+            <label>Password</label><a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">(Fortgot?)</a>
+            <br>
+            <input type="text" name="Password" />
+            <br>
+            <button>Sign in</button> 
+            <input type="checkbox" name="remember-me" value="Remember me" /><p>Remember</p>
+            <p>Dont't have an account?</p><a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">Create One</a>
+        </form>
 
-    <div class="footer">
+    </main>
 
-    </div>
+    <footer class="footer">
+        <button class="btn-tracking" href="https://www.garmin.com/en-GB/legal/atdisclaimer/">Activity Tracking Accuracy</button>
+        <ul>
+            <li><a href="https://connect.garmin.com/support/">Help</a></li>
+            <li><a href="https://connect.garmin.com/status/">Status</a></li>
+            <li><a href="https://www.garmin.com/en-GB/legal/terms-of-use/">Terms</a></li>
+            <li><a href="https://www.garmin.com/en-GB/privacy/connect/">Privacy</a></li>
+            <li><a href="https://www.garmin.com/en-GB/legal/security/">Security</a></li>
+        </ul>
+        
+
+
+
+    </footer>
+
 
 </body>
 </html>
