@@ -1,3 +1,43 @@
-html, body {
-    
+.header{
+    height: 60px;
+    display: flex;
+    background: #1a1a1a;
+    justify-content: space-between;
+}
+
+.main{
+    background-image: url(main.jpg);
+    height: calc(100vh - 50px);
+    min-height: 800px;
+    overflow-x: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.main form{
+    display: flex;
+    height: 295px;
+    width: 350px;
+    background-color: #fafafa;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.footer{
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    padding: 60px 0;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+.footer ul li{
+    list-style: none;
+    display: inline-block
+
 }
