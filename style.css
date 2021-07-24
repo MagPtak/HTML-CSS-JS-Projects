@@ -1,9 +1,52 @@
-.header{
+header{
     height: 60px;
-    display: flex;
     background: #1a1a1a;
+    padding: 0 15% 0 15%;
     justify-content: space-between;
 }
+ 
+.nav{
+    display: flex;
+    
+} 
+
+.logo{
+    padding: 0;
+    width: 50%;
+  
+}
+
+.logo img{
+    display: flex;
+    height: 28px;
+    width: 150px;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+
 
 .main{
     background-image: url(main.jpg);

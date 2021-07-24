@@ -6,38 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garmin Connect</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <ul>
-            <li><a href="https://connect.garmin.com"><img src="logo.png" height="28" width="150"></a></li>
-            <li><a href="https://connect.garmin.com/start/">Get started</a></li>
-            <li><a href="https://connect.garmin.com/support/">Support</a></li>
-            <section class="language-selection">
-                <datalis id="language">
-                    <option value="Eesti"></option>
-                    <option value="Latviesu"></option>
-                    <option value="Dansk"></option>
-                </datalis>
-            </section>
-            <button class="btn" href="https://connect.garmin.com/signin">Sign in</button>
-         </ul>
+    <header>
+        <div class="menu">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="https: //connect.garmin.com"><img src="logo.png"></a>
+                </div>
+       
+                <div class="links">
+                    <ul>
+                        <li><a href="https://connect.garmin.com/start/">Get started</a></li>
+                        <li><a href="https://connect.garmin.com/support/">Support</a></li>
+                      </ul>
+                    <button class="btn" href="https://connect.garmin.com/signin">Sign in</button>
+                </div>
+            </nav>
+        </div>
     </header>
 
+
+
+
+
+
     <main class="main">
-        <form action="signin" method="post">
-            <label>Email</label>
-            <br>
-            <input type="text" name="Email" />
-            <br>
-            <label>Password</label><a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">(Fortgot?)</a>
-            <br>
-            <input type="text" name="Password" />
-            <br>
-            <button>Sign in</button> 
-            <input type="checkbox" name="remember-me" value="Remember me" /><p>Remember</p>
-            <p>Dont't have an account?</p><a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">Create One</a>
-        </form>
+        <!-- <form method="post">
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="wmail" id="email" required>
+             </div>
+
+             <div>
+                <label for="password">Password<a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">(Fortgot?)</a></label>
+                <input type="text" name="password" id="password" required>
+            </div>
+            
+                 <button>Sign in</button> 
+
+            <div>
+                <label for="checkbox">Remember me</label>
+                <input type="checkbox" name="remember-me" value="remember me">
+            </div>
+
+                 <p>Dont't have an account?</p><a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">Create One</a>
+        </form> -->
 
     </main>
 
@@ -59,3 +76,12 @@
 
 </body>
 </html>
+
+ 
+<!-- <section class="language-selection">
+    <datalis id="language">
+        <option value="Eesti"></option>
+        <option value="Latviesu"></option>
+        <option value="Dansk"></option>
+    </datalis>
+</section> -->
