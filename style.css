@@ -4,7 +4,10 @@ header{
     padding: 0 15% 0 15%;
     justify-content: space-between;
 }
- 
+ body{
+    font: 400 14px/22px Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+ }
+
 .nav{
     display: flex;
     
@@ -26,9 +29,11 @@ header{
 }
 
 .links{
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
     
 }
 
@@ -43,7 +48,175 @@ nav a{
     text-decoration: none;
     color: white;
     text-align: center;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: #1976d2;
+    color: #fff;
+    font-size: 14px;
+    height: 33px;
+    padding: 0 20px;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    transition: background-color 200ms;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: #1265c2;
+}
+
+.btn:active{
+    border: #fff;
+    border-width: 2px;
+}
+
+
+
+.main{
+    background-image: url(main.jpg);
+    height: calc(100vh - 50px);
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 33px;
+    margin-top: 0;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 295px;
+    width: 350px;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-weight: 400px;
+} 
+.input{
+    height: 32px;
+    width: 342px;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: inset 0 3px #eee;
+
+}
+
+.input:active{
+    border-width: 2px;
+    border-color: #1265c2;;
+}
+.main a{
+    color: #1976d2;
+    font-weight: 400px;
+}
+
+.main a:hover{
+    text-decoration: none;
+    
+}
+
+.main button{
+    height: 32px;
+    width: 74.53;
+    padding: 5px 14px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #1976d2;
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.main button:hover{
+    background-color: #1265c2;
+}
+
+.main button:active{
+    border: #fff;
+    border-width: 2px;
+}
+
+
+
+
+.footer{
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    padding: 60px 0;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+.footer ul li{
+    list-style: none;
+    display: inline-block
+
+}
+
+
+
+
+/* 
+header{
+    height: 60px;
+    background: #1a1a1a;
+    padding: 0 15% 0 15%;
+    
+}
+ 
+.nav{
+    display: block; 
+} 
+
+.logo{
+    padding: 0;
+    width: 50%;
+  
+}
+
+.logo img{
+ 
+    height: 28px;
+    width: 150px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.links{
     display: block;
+    width: 50%;
+    
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
 }
 
 
@@ -83,4 +256,4 @@ nav a{
     list-style: none;
     display: inline-block
 
-}
+} */
