@@ -1,19 +1,23 @@
 header{
     height: 60px;
     background: #1a1a1a;
-    padding: 0 15% 0 15%;
+    display: flex;
     justify-content: space-between;
 }
  body{
     font: 400 14px Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
  }
 
-.nav{
+.menu{
     display: flex;
-    
-} 
+    width: 100%;
+}
+
 
 .logo{
+    display: flex;
+    justify-content: center;
+    margin-right: 19%;
     padding: 0;
     width: 50%;
   
@@ -21,36 +25,43 @@ header{
 
 .logo img{
     display: flex;
-    height: 28px;
-    width: 150px;
+    height: 24px;
+    width: 142px;
     align-items: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 18px;
+    margin-bottom: 14px;
 }
 
 .links{
-    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 19%;
+    margin-bottom: 2px;
     width: 50%;
     
 }
 
-.nav ul{
+.menu ul{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
     list-style: none;
 }
 
-.nav a{
+.menu a{
     display: flex;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    letter-spacing: 0px;
     text-decoration: none;
     color: white;
     text-align: center;
     justify-content: space-between;
-}
+
+
+} 
 
 .btn{
     background-color: #1976d2;
@@ -61,7 +72,7 @@ header{
     margin: 0;
     cursor: pointer;
     border: none;
-    transition: background-color 200ms;
+    transition: 200ms;
     border-radius: 4px;
 }
 
@@ -77,18 +88,23 @@ header{
 
 
 .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(main.jpg);
-    height: calc(100vh - 50px);
+    height: 100vh;
     min-height: 800px;
     background-size: cover;
     background-position: center;
 }
 
 .login{
+    display: flex;
+    /* line-height: 33px; */
     font-weight: 300;
     font-size: 32px;
-    line-height: 33px;
-    margin-top: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .form{
@@ -100,17 +116,30 @@ header{
     border-radius: 6px;
     height: 295px;
     width: 350px;
+    margin-bottom: 12%;
     background-color: #fafafa;
     font-size: 14px;
-    font-weight: 400px;
+    font-weight: 400;
 } 
+
+.email label{
+    display: flex;
+    font-weight: bolder;
+}
+
+.password label{
+    margin-bottom: 200px;
+}
+
 .input{
     height: 32px;
-    width: 342px;
+    width: 336px;
     background: #fff;
     border: 1px solid #bbb;
     border-radius: 5px;
     box-shadow: inset 0 3px #eee;
+    margin-bottom: 8px;
+    margin-top: 5px;
 
 }
 
@@ -151,10 +180,11 @@ header{
 }
 
 
-
-
 .footer{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 178px;
     width: 100%;
     bottom: 0;
     padding: 60px 0;
@@ -164,10 +194,11 @@ header{
     background-color: #EFEFEF;
 }
 
-.btn-tracking{
-    /* display: flex; */
+.btn-tracking button{
+    display: flex;
     justify-content: center;
-    font-weight: 200px;
+    align-items: center;
+    font-weight: 200;
     font-size: 18px;
     height: 44px;
     width: 216.17px;
@@ -175,27 +206,55 @@ header{
     border-color: #555555;
     border-style: solid;
     border-width: 1px;
-    border-radius: 3px;
+    border-radius: 3px; 
     cursor: pointer;
 }
 
 
-.footer ul {
+.additionals{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finlinks ul {
     list-style: none;
+    display: flex;
+}
+
+.finlinks{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .finlinks a{
-    display: inline-block;
+    display: flex;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
-    width: 50%;
     color: inherit;
 }
 
+
+
 .copyrights{
-    display: inline-block;
-    color: #6c6c6c;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 50%;
+    color: #6c6c6c;
+    
+    
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .social img{
@@ -204,8 +263,14 @@ width: 24px;
 color: #6c6c6c;
 }
 
+.cookies{
+    display: flex;
+    width: 100%;
+}
+
 .cookies a{
     text-decoration: none;
+    display: flex;
     color: inherit;
 }
 
