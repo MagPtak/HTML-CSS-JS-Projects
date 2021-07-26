@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garmin Connect</title>
+    <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,6 @@
 <body>
     <header>
         <div class="menu">
-            <nav class="nav">
                 <div class="logo">
                     <a href="https: //connect.garmin.com"><img src="logo.png"></a>
                 </div>
@@ -23,71 +23,83 @@
                         <li><a href="https://connect.garmin.com/start/">Get started</a></li>
                         <li><a href="https://connect.garmin.com/support/">Support</a></li>
                         <li><button class="btn" href="https://connect.garmin.com/signin">Sign In</button></li>
-                </ul>
+                        
+                    </ul>
                 </div>
-            </nav>
         </div>
     </header>
-
-
-
-
 
 
     <main class="main">
         <div class="form">
             <form method="post">
                 <div class="login">Sign In</div>
-                <div>
-                    <label for="email">Email</label>
-                    <input class="input" type="text" name="wmail" id="email" required>
-                </div>
+                    <div>
+                        <div class="email">
+                            <div>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="inputemail">
+                                <input class="input" type="text" name="wmail" id="email" required>
+                            </div>
+                        </div>
 
-                <div>
-                    <label for="password">Password<a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">(Fortgot?)</a></label>
-                    <input class="input" type="text" name="password" id="password" required>
-                </div>
-                
-                    <button>Sign in</button> 
-
-                <div>
-                    <label for="checkbox">Remember me</label>
-                    <input type="checkbox" name="remember-me" value="remember me">
-                </div>
-
-                    <p>Dont't have an account?</p><a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">Create One</a>
-            </form>
+                        <div class="password"></div>
+                            <div>
+                                <label for="password">Password <a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">(Fortgot?)</a></label>
+                            </div>
+                            <div>
+                                <input class="input" type="text" name="password" id="password" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <button>Sign In</button>
+                            <input type="checkbox" name="remember-me" value="remember me">
+                            <label for="checkbox">Remember me</label>
+                            
+                        </div>
+                                <label>Dont't have an account? </label><a href="https://connect.garmin.com/signin/?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F">Create One</a>
+                        </div>
+                    </div>
+                </form>
     </div>
 
     </main>
 
-    <footer class="footer">
+    <footer>
+        <div class="footer">
+            <div class="btn-tracking">
+                <button href="https://www.garmin.com/en-GB/legal/atdisclaimer/">Activity Tracking Accuracy</button>
+            </div>
+            
+            <div class="additionals">
+                <div class="finlinks">
+                        <ul>
+                            <li><a href="https://connect.garmin.com/support/">Help</a></li>
+                            <li><a href="https://connect.garmin.com/status/">Status</a></li>
+                            <li><a href="https://www.garmin.com/en-GB/legal/terms-of-use/">Terms</a></li>
+                            <li><a href="https://www.garmin.com/en-GB/privacy/connect/">Privacy</a></li>
+                            <li><a href="https://www.garmin.com/en-GB/legal/security/">Security</a></li>
+                        </ul>
+                </div>
 
-        <div class="btn-tracking">
-             <button href="https://www.garmin.com/en-GB/legal/atdisclaimer/">Activity Tracking Accuracy</button>
-        </div>
+                <div class="copyright">
+                    <p>Copyright © 1996-2021 Garmin Ltd. or its subsidiaries</p>
+                </div>
+            </div>
 
-        <div class="finlinks">
-            <ul>
-                <li><a href="https://connect.garmin.com/support/">Help</a></li>
-                <li><a href="https://connect.garmin.com/status/">Status</a></li>
-                <li><a href="https://www.garmin.com/en-GB/legal/terms-of-use/">Terms</a></li>
-                <li><a href="https://www.garmin.com/en-GB/privacy/connect/">Privacy</a></li>
-                <li><a href="https://www.garmin.com/en-GB/legal/security/">Security</a></li>
-            </ul>
-        </div>
+            
 
-        <div class="copyright">
-            <p>Copyright © 1996-2021 Garmin Ltd. or its subsidiaries</p>
-        </div>
-
-        <div class="social">
-            <a href="https://www.instagram.com/garminfitness/"><img src="insta2.png"></a>
-            <a href="https://www.facebook.com/garminfit"><img src="fb.png"></a>
-            <a href="https://twitter.com/garminfitness"><img src="twit.png"></a>
-        </div>
-        <div class="cookies">
-            <a href="https://connect.garmin.com/signin/">Cookie Preferences</a>
+            <div class="social">
+                <a href="https://www.instagram.com/garminfitness/"><img src="insta2.png"></a>
+                <a href="https://www.facebook.com/garminfit"><img src="fb.png"></a>
+                <a href="https://twitter.com/garminfitness"><img src="twit.png"></a>
+            </div>
+            
+            <div class="cookies">
+                <a href="https://connect.garmin.com/signin/">Cookie Preferences</a>
+            </div>
         </div>
 
 
