@@ -2,7 +2,7 @@ header{
     height: 60px;
     background: #1a1a1a;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
  body{
     font: 400 14px Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -10,16 +10,19 @@ header{
 
 .menu{
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    width: 70%;
 }
 
 
 .logo{
-    display: flex;
-    justify-content: center;
-    margin-right: 19%;
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
+    /* margin-right: 19%; */
     padding: 0;
     width: 50%;
+    
   
 }
 
@@ -28,17 +31,16 @@ header{
     height: 24px;
     width: 142px;
     align-items: center;
-    margin-top: 18px;
-    margin-bottom: 14px;
+    margin-top: 20px;
+   
 }
 
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin-left: 19%;
-    margin-bottom: 2px;
     width: 50%;
+   
     
 }
 
@@ -51,7 +53,7 @@ header{
 }
 
 .menu a{
-    display: flex;
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     letter-spacing: 0px;
@@ -103,7 +105,7 @@ header{
     /* line-height: 33px; */
     font-weight: 300;
     font-size: 32px;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 15px;
 }
 
@@ -119,12 +121,14 @@ header{
     margin-bottom: 12%;
     background-color: #fafafa;
     font-size: 14px;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
 } 
 
 .email label{
     display: flex;
-    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
 }
 
 .password label{
@@ -149,7 +153,8 @@ header{
 }
 .main a{
     color: #1976d2;
-    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900px;
 }
 
 .main a:hover{
@@ -179,56 +184,78 @@ header{
     border-width: 2px;
 }
 
+.almostlast{
+    margin-bottom: 20px;
+}
 
 .footer{
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 178px;
     width: 100%;
-    bottom: 0;
     padding: 60px 0;
-    /* text-align: center;
-    flex-direction: column;
-    justify-content: center; */
     background-color: #EFEFEF;
+    align-items: stretch;
+    flex-direction: column;
+
+}
+
+
+
+
+.btn-tracking{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .btn-tracking button{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    background-color: #EFEFEF;
     font-weight: 200;
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
     height: 44px;
-    width: 216.17px;
     padding: 10px;
     border-color: #555555;
     border-style: solid;
     border-width: 1px;
     border-radius: 3px; 
     cursor: pointer;
+    margin-bottom: 30px;
+    
 }
 
 
+
+
 .additionals{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+}
+
+.finlinks{
+    display: inline-block;
+    width: 50%;
 }
 
 .finlinks ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-.finlinks{
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    align-items: center;
-}
+
+
+
+.finlinks ul li{
+    margin-right: 15px;
+    margin-left: 15px;
+} 
 
 .finlinks a{
     display: flex;
@@ -236,14 +263,16 @@ header{
     align-items: center;
     text-decoration: none;
     color: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 1000px;
+    width: 50%;
 }
 
 
 
-.copyrights{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.copyright{
+    display: block;
     width: 50%;
     color: #6c6c6c;
     
@@ -258,6 +287,11 @@ header{
 }
 
 .social img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.social img{
 height: 24px;
 width: 24px;
 color: #6c6c6c;
@@ -265,6 +299,7 @@ color: #6c6c6c;
 
 .cookies{
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -272,6 +307,7 @@ color: #6c6c6c;
     text-decoration: none;
     display: flex;
     color: inherit;
+    margin-top: 10px;
 }
 
 
