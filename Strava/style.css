@@ -17,11 +17,10 @@ body{
 .header{
     display: block;
     background-color: #fff;
-    /* border-bottom: #f0f0f5; */
-    border-bottom: black;
+    border-bottom: #f0f0f5 solid 1px;
     text-align: center;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Helvetica, sans-serif;;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
 }
 
 .header-container{
@@ -80,4 +79,19 @@ body{
 .btn-login:active{
     border: #fff;
     border-width: 2px;
+}
+
+.main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 1248px;
+}
+
+.heading{
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+
 }
