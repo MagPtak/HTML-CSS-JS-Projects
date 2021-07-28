@@ -1,7 +1,38 @@
 body{
-    font-family: 'Segoe UI', Helvetica, sans-serif ;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
     background-color: #fff;
     color: #242428;
     font-size: 14px;
     line-height: 1.45;
+}
+
+.view{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.header{
+    display: block;
+    background-color: #fff;
+    /* border-bottom: #f0f0f5; */
+    border-bottom: black;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Helvetica, sans-serif;;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 55px;
+    width: 1248px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
