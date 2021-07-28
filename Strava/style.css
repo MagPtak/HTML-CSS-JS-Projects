@@ -29,10 +29,55 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 55px;
-    width: 1248px;
+    height: 55px;
+    width: 1216px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+
+
+.logo{
+    display: block;
+    margin-top: 8px;
+
+   
+}
+
+
+.nav{
+    display: block;
+    width: 1121px;
+    text-align: right;
+    box-sizing: border-box;
+
+}
+
+.btn-login{
+    display: inline-flex; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    color: #242428;
+    padding: 6px 16px;
+    background-color: #fff;
+    border-color: #dfdfe8;
+}
+
+.btn-login:hover{
+    background-color: #f2f2f2;
+}
+
+.btn-login:active{
+    border: #fff;
+    border-width: 2px;
 }
