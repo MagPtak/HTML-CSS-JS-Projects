@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Segoe UI', Helvetica, sans-serif;
     background-color: #fff;
@@ -81,17 +85,122 @@ body{
     border-width: 2px;
 }
 
-.main{
+.main-container{
+    display: block;
     margin-top: 80px;
     margin-bottom: 80px;
     width: 1248px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .heading{
     display: block;
     text-align: center;
+    margin-bottom: 80px;
+    margin-top: 0;
     font-size: 48px;
     font-weight: 700;
     font-family: 'Segoe UI', Helvetica, sans-serif;
 
+}
+
+.main-content{
+    display: block;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.devices{
+    display: inline-block;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.signing{
+    display: inline-block;
+    text-align: center;
+    left: 200px;
+
+}
+
+
+.btn-fb{
+    display: block;
+    color: #fff;
+    background-color: #3b5998;
+    border: #3b5998 1px solid;
+    height: 54px;
+    width: 360px;
+    background-image: url(icon-facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 16px center;
+    cursor: pointer
+}
+
+.btn-fb:hover{
+    background-color: #2d446b;
+}
+
+
+.btn-google{
+    display: block;
+    color: #242428;
+    background-color: #fff;
+    border: #dfdfe8 1px solid;
+    height: 54px;
+    width: 360px;
+    background-image: url(icon-google.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 16px center;
+    cursor: pointer
+}
+
+.btn-google:hover{
+    background-color: #f5f5f5;
+    border-color: #292929
+}
+
+.btn-apple{
+    display: block;
+    color: #242428;
+    background-color: #fff;
+    border: #dfdfe8 1px solid;
+    height: 54px;
+    width: 360px;
+    background-image: url(icon-apple.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 16px center;
+    cursor: pointer
+}
+
+.btn-apple:hover{
+    background-color: #f5f5f5;
+    border-color: #292929;
+}
+
+
+.btn-email{
+    display: block;
+    color: #242428;
+    background-color: #fff;
+    border: #dfdfe8 1px solid;
+    height: 54px;
+    width: 360px;
+    background-image: url(icon-email.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 16px center;
+    cursor: pointer
+}
+
+.btn-apple:hover{
+    background-color: #f5f5f5;
+    border-color: #292929;
 }
