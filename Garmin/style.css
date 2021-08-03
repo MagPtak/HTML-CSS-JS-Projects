@@ -21,7 +21,7 @@ header{
     align-items: center; */
     /* margin-right: 19%; */
     padding: 0;
-    width: 50%;
+    width: 150px;
     
   
 }
@@ -41,8 +41,20 @@ header{
     align-items: center;
     width: 50%;
    
-    
 }
+
+#menuCheckbox {
+    display: none;
+  }
+  
+.hamburgerIcon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+  }
+  
+ 
+
 
 .menu ul{
     display: flex;
@@ -112,7 +124,7 @@ header{
 .form{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 9px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -247,20 +259,21 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-right: 15px;
 }
 
 
 
 
 .finlinks ul li{
-    margin-right: 15px;
-    margin-left: 15px;
+   
+    margin-left: 2px;
 } 
 
 .finlinks a{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     text-decoration: none;
     color: inherit;
     font-family: 'Open Sans', sans-serif;
@@ -269,6 +282,15 @@ header{
     width: 50%;
 }
 
+.finlinks li:not(:first-of-type)::before{
+    width: 5px;
+    height: 5px;
+    margin: 0 10px 3px 10px;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #6c6c6c;
+}
 
 
 .copyright{
@@ -313,16 +335,89 @@ color: #6c6c6c;
 
 
 
-/* a, a:active, a:hover, a:visited {
-    text-decoration: none;
-    color: inherit;
-} */
+@media screen and (max-width: 767px) {
 
-/* .btn-tracking li:not(:first-of-type)::before{
-    width: 5px;
-    height: 5px;
-    margin: 0 10px 3px 10px;
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    background-color: #6c6c6c; */
+header{
+    height: 60px;
+    background: #1a1a1a;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hamburgerIcon {
+    /* width: 20px;
+    height: 14px; */
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 25px;
+  }
+
+  #menuCheckbox:checked ~ ul {
+    max-height: 100vh;
+    background-color: #1a1a1a;
+  }
+
+  .hamburgerIcon i {
+    font-size: 1.7em;
+  }
+   
+  .links ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+    width: 100%;
+  }
+
+  .links ul a {
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+    background: #1a1a1a;
+    padding: 10px 0px 10px 30px;
+  }
+    
+  .logo img{
+    display: flex;
+    height: 24px;
+    width: 142px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 25px;
+   
+}
+
+.main{
+    background-image: url(mainSmall.jpg);
+}
+
+.form{
+    margin-bottom: 150px;
+}
+
+.additionals{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.finlinks{
+    width: 90%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.copyright p{
+    margin-top: 15px;
+}
+}
