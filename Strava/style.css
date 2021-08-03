@@ -33,7 +33,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 55px;
-    width: 1216px;
+    width: 1248px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 16px;
@@ -80,6 +80,7 @@ body{
     background-color: #f2f2f2;
 }
 
+
 .btn-login:active{
     border: #fff;
     border-width: 2px;
@@ -117,7 +118,7 @@ body{
     display: block;
     padding-left: 16px;
     padding-right: 16px;
-    margin-right: 170px;
+    margin-right: 80px;
     margin-top: 30px;
     background-image: url(devices.jpg);
     height: 468px;
@@ -219,12 +220,15 @@ body{
 
 .or{
     display: inline-block;
+    height: 24px;
+    width: 24px;
     background: #fff;
     color: #6d6d78;
     font-size: 12px;
     font-family: 'Segoe UI', Helvetica, sans-serif;
     text-align: center;
-    padding: 0 12px;
+    /* padding: 0 12px; */
+    transform: translateY(-6%);
 }
 
 .btn-email{
@@ -495,8 +499,8 @@ h5{
         text-align: center;
         margin-bottom: 20px;
         margin-top: 0;
-        font-size: 34px;
-        font-weight: 600;
+        font-size: 30px;
+        font-weight: 500;
         font-family: 'Segoe UI', Helvetica, sans-serif;
         line-height: 1.2em;
     
@@ -517,11 +521,11 @@ h5{
     padding-left: 16px;
     padding-right: 16px;
     margin: auto;
-    /* margin-right: 170px; */
+    /* margin-right: 80px; */
     /* margin-top: 30px; */
     background-image: url(devices_small.jpg);
-    height: 280px;
-    width:  260px;
+    height: 260px;
+    width:  243px;
     background-repeat: no-repeat;
     }
 
@@ -580,6 +584,11 @@ h5{
         cursor: pointer
     }
 
+.line{
+    display: flex;
+    width: 288px;
+    height: 50px;
+}
 
 .hr{
     display: block;
@@ -596,12 +605,15 @@ h5{
 
 .or{
     display: inline-block;
+    height: 24px;
+    width: 24px;
     background: #fff;
     color: #6d6d78;
     font-size: 12px;
     font-family: 'Segoe UI', Helvetica, sans-serif;
     text-align: center;
-    padding: 0 12px;
+    /* padding: 0 12px; */
+    transform: translateY(-6%);
 }
 
 .btn-email{
