@@ -109,7 +109,17 @@ label{
     border: 1px rgb(204, 204, 204) solid;
     border-radius: 4px;
     margin-top: 12px;
+    font-size: 16px;
+    color: rgb(204, 204, 204);
+    padding-left: 10px;
 }
+
+.input input:focus{
+    border: 4px rgba(0, 119, 217, 0.3) solid;
+}
+
+
+
 
 .line {
     
@@ -134,13 +144,16 @@ label{
 
 .or{
     display: inline-block;
+    height: 24px;
+    width: 24px;
     background: #fff;
     color: #6d6d78;
     font-size: 16px;
     font-family: 'Segoe UI', Helvetica, sans-serif;
     text-align: center;
-    padding: 0 12px;
+    /* padding: 0 12px; */
     font-weight: 600;
+    transform: translateY(-6%);
 }
 
 
@@ -180,6 +193,8 @@ label{
     width: 100%;
     padding: 48px;
     margin-top: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 .lang{
@@ -213,7 +228,7 @@ label{
     
 }
 
-.language{
+.select-language{
     height: 42px;
     width: 100%;
     border: #CCCCCC 1px solid;
@@ -270,4 +285,78 @@ label{
     background-image: url(mountains.jpg);
     background-size: cover;
     background-position: center;
+}
+
+
+@media screen and (max-width: 375px) {
+
+.mountains{
+    background-image: none;
+}
+
+.leftContainer{
+    width: 375px;
+}
+
+.formContainer{
+    padding: 12px;
+    height: 450px;
+}
+
+p{
+    margin-top: 20px;
+} 
+
+.container{
+    flex-direction: column;
+    height: 812px;
+    max-width: 375px;
+}
+
+form, .navMain{
+    height: 262px;
+}
+
+.logoContainer{
+    max-width: 375px;
+    height: 60px;
+    padding: 12px;
+}
+
+/* .formContainer{
+
+} */
+
+.form, 
+.input, 
+.input input, 
+.email, 
+.line 
+.hr{
+    width: 351px;
+}
+
+.email{
+    margin-top: 25px;
+    background-position: 60px center;
+}
+
+.input label{
+    margin-top: 40px;
+}
+
+.rightContainer{
+    width: 0;
+    height: 0;
+}
+
+.select-language{
+    background-color: #fff;
+}
+
+.bottomContainer{
+    padding: 12px;
+    height: 66px;
+}
+
 }
