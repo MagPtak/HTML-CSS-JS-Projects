@@ -45,10 +45,21 @@
                            </div>
                         </div>
                         <div class="langList">
-                            <select class="language" name="language">
-                                <option class="gb" value="en" img src="gb.png">United Kingdom</option>
-                                <option value="de">Deutsch</option>
-                                <option value="it">Italiano</option>
+                            <select id="select-language" class="select-language">
+                                <optgroup label="Deutsch">
+                                    <option value="de_DE">Deutschland</option>
+                                    <option value="DE_AT">Österreich</option>
+                                    <option value="DE_CH">Schweiz</option>
+                                </optgroup>
+                                <optgroup label="English">
+                                    <option value="en_AU">Australia</option>
+                                    <option value="en_GB">Great Britain</option>
+                                    <option value="en_US">United States</option>
+                                </optgroup>
+                                <optgroup label="Italiano">
+                                    <option value="it_IT">Italia</option>
+                                    <option value="it_CH">Svizzero</option>
+                                </optgroup>
                             </select>
 
                         </div>
@@ -68,3 +79,10 @@
     
 </body>
 </html>
+
+<!-- 
+<select class="language" name="language">
+    <option class="gb" value="en" img src="gb.png">United Kingdom</option>
+    <option value="de">Deutsch</option>
+    <option value="it">Italiano</option>
+</select> -->
