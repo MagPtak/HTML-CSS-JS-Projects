@@ -105,3 +105,9 @@ footer button {
   color: #fff;
   border-radius: 3px;
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    background-image: url(/img/backgroundSmall.jpg);
+  }
+}
