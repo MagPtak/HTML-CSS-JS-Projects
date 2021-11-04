@@ -15,15 +15,14 @@ body {
   overflow: hidden;
 }
 
-
-.slides {
+main {
   width: 500%;
   height: 500px;
   display: flex;
 }
 
-.slides input {
-  display:  none;
+main input {
+  display: none;
 }
 
 .slide {
@@ -36,28 +35,27 @@ body {
   height: 500px;
 }
 
-
 .navigation-manual {
-position: absolute;
-width: 800px;
-margin-top: -40px;
-display: flex;
-justify-content: center;
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
 }
 
 .manual-btn {
-border: 1px solid white;
-padding: 5px;
-border-radius: 10px;
-cursor: pointer;
-transition: 1s;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 20px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -81,7 +79,6 @@ transition: 1s;
   margin-top: -40px;
 }
 
-
 .navigation-auto div {
   border: 1px solid black;
   padding: 5px;
@@ -104,5 +101,3 @@ transition: 1s;
 #radio3:checked ~ .navigation-auto .auto-btn3 {
   background-color: rgb(212, 137, 162);
 }
-
-

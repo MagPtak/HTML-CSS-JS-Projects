@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="reset.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="leftContainer">
             <div class="mainContainer">
                 <div class="logoContainer">
-                    <img src="komoot.png">
+                    <img src="./img/komoot.png">
                 </div>
                 <div class="formContainer">
                     <div class="navMain">
@@ -22,9 +22,13 @@
                                 <p>Create a new account or log in to an existing one.</p>
                                 <div class="input">
                                     <label for="email">Enter your email address:</label>
-                                    <input id="email" type="email" name="email" placeholder="e. g. you@example.com">
+                                    <input id="email" type="email" name="email" placeholder="e.g you@example.com">
                                 </div>
-                                <button class="email">Continue with Email</button>
+                                    <button class="email">
+                                        <img src="./img/email.png">
+                                        <h2>Continue with Email</h2>
+                                    </button>
+                                
                             </form>
                     </div>
                         <div class="line">
@@ -41,11 +45,11 @@
                     <div class="lang">
                         <div class="langIcon">
                            <div class="langIconImg">
-                               <img src="globe.png">
+                               <img src="./img/globe.png">
                            </div>
                         </div>
                         <div class="langList">
-                            <select id="select-language" class="select-language">
+                            <select id="selectLanguage" class="selectLanguage">
                                 <optgroup label="Deutsch">
                                     <option value="de_DE">Deutschland</option>
                                     <option value="DE_AT">Österreich</option>
@@ -80,9 +84,3 @@
 </body>
 </html>
 
-<!-- 
-<select class="language" name="language">
-    <option class="gb" value="en" img src="gb.png">United Kingdom</option>
-    <option value="de">Deutsch</option>
-    <option value="it">Italiano</option>
-</select> -->
