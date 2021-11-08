@@ -91,6 +91,7 @@ header {
   align-items: center;
   background-image: url(/img/main.jpg);
   min-height: 800px;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
