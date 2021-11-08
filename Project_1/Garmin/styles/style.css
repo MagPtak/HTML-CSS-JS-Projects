@@ -366,15 +366,21 @@ header {
 
   .footerLinks {
     width: 90%;
+    font-size: 14px;
+  }
+
+  .footerLinks a {
+    font-size: 14px;
   }
 
   .copyright {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: auto;
   }
   .copyright p {
-    margin-top: 25px;
+    margin-top: 15px;
   }
 
   .social {
